@@ -1,0 +1,29 @@
+<!-- Author: DIZON, Martin Alfonso S. -->
+<!-- Comment: Javascript implementation will be prioritized. CSS to follow -->
+<!-- To Do: Implement submit and cancel functionality -->
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Login Page</title>
+     <script>
+            function onLoginBtnClick() {
+                   alert(document.getElementById("username").value);
+            }
+            function onClearBtnClick() {
+                   document.getElementById("username").value = "";
+            }
+     </script>
+</head>
+<body>
+     <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username"><br>
+
+          <label for="password">Password:</label>
+          <input type="text" id="txtPassword" name="password"><br>
+
+          <button type="submit" onClick="onLoginBtnClick()">Login</button>
+          <button type="button" onClick="onClearBtnClick()">Clear</button>
+     </form>
+</body>
+</html>
